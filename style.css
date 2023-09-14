@@ -1,0 +1,47 @@
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*button{
+  position: relative;
+}
+*/
+
+main {
+  flex-grow: 1;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button .text {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    color: blue;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .buttons {
+    /*  
+    position: absolute;
+    top: 0;
+    left: 50%;
+  */
+    width: 100vw;
+    background-color: red;
+  }
+
+  button .text {
+    display: initial;
+  }
+}
